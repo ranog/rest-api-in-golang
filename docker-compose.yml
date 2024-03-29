@@ -1,0 +1,24 @@
+---
+
+version: '3.1'
+
+services:
+  http:
+    image: service_test
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@db:5432/postgres
+      PACT_TOKEN: ${PACT_TOKEN}
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    entrypoint: ["bin/entrypoint.sh"]
+
+  db:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
