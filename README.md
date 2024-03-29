@@ -1,9 +1,8 @@
 # rest-api-in-golang
 
-### Local with Docker
+### Local com Docker
 
-1. **Set your enviroment variables.** Create a copy of the file app/`.env.example` provided
-   and name it `.env` in the root.
+1. **Defina suas variáveis de ambiente.** Crie uma cópia do arquivo `.env.example` fornecido e nomeie-o como `.env` na raiz.
 
 
-fonte: https://www.youtube.com/playlist?list=PLtFquUj7IL8WS6y_BXMREs3wWPO7NWp-x
+fonte do estudo: https://www.youtube.com/playlist?list=PLtFquUj7IL8WS6y_BXMREs3wWPO7NWp-x
